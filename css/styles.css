@@ -1,0 +1,78 @@
+/*  GENERAL
+    ============================================== */
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*  SECTIONS
+    =============================================== */
+
+.header {
+    padding: 40px 0 30px 0;
+    background-color: #fc4311;
+}
+
+/*  COMPONENTS
+    =============================================== */
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-self: center;
+}
+
+.logo > a {
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation > a {
+    align-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 25px 0 25px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.navigation > a:hover {
+    color: #000;
+}
+
+.navigation > a:last-of-type {
+    padding-right: 0;
+}
+
+a.active-link {
+    color: #000;
+}
+
+
+/*  GRID
+    ================================================ */
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
