@@ -13,10 +13,14 @@ html {
 /*  SECTIONS
     =============================================== */
 
+/* Header */
+
 .header {
     padding: 4rem 0 3rem 0;
     background-color: #fc4311;
 }
+
+/* Hero */
 
 .hero {
     height: 70rem;
@@ -92,6 +96,23 @@ html {
 .hero__btn_container {
     text-align: center;
     padding-top: 1rem;
+}
+
+/* About */
+
+.about__headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__title {
+    margin: 0;
+    padding-top: 9rem;
+    font-size: 4rem;
+    font-weight: bold;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #fc4311;
 }
 
 /*  COMPONENTS
