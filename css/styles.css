@@ -51,22 +51,42 @@ html {
     color: #fff;
 }
 
-.hero__left_arr,
-.hero__right_arr,
-.hero__bottom_arr {
+.hero__arr {
     position: absolute;
+    height: 7rem;
+    width: 7rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: .5s;
+    font-size: 3rem;
+    color: #000;
+}
+
+.hero__arr:hover {
+    background-color: #fc4311;
+    color: #fff;
 }
 
 .hero__left_arr {
-    left: 0;
+    left: -2rem;
 }
 
 .hero__right_arr {
-    right: 0;
+    right: -2rem;
 }
 
 .hero__bottom_arr {
-    bottom: 0;
+    bottom: -3.5rem;
+    color: #fc4311;
+}
+
+.hero__bottom_arr:hover {
+    background-color: #fff;
+    color: #fc4311;
 }
 
 .hero__btn_container {
