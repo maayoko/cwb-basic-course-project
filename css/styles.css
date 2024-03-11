@@ -1,3 +1,14 @@
+/*  VARIABLES
+    ============================================== */
+
+:root {
+    --primary-color: #fc4311;
+    --hero-image-height: 70rem;
+    --hero-title-font-size: 7rem;
+    --white-color: #ffffff;
+    --container-width: 114rem;
+}
+
 /*  GENERAL
     ============================================== */
 
@@ -113,6 +124,16 @@ html {
     font-weight: bold;
     padding-bottom: .5rem;
     border-bottom: 1px solid #fc4311;
+    margin-bottom: 2rem;
+}
+
+.about__description {
+    color: #3d3c3c;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5rem;
 }
 
 /*  COMPONENTS
@@ -189,6 +210,12 @@ a.active-link {
     margin: 0 auto;
 }
 
+.container-fluid {
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -198,3 +225,31 @@ a.active-link {
     justify-content: space-between;
 }
 
+.col {
+    flex: 1 0 0%;
+}
+
+.col-6 {
+    max-width: 50%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.col-offset-2 {
+    margin-left: calc(100/12*1%);
+}
+
+/*
+
+col-1 = 8,333333333333333%
+col-2 = 16,66666666666667%
+col-3 = 25%
+col-4 = 33,33333333333333%
+col-5 = 41,66666666666667%
+col-6 = 50%
+col-7 = 58.33333333333333%
+col-8 = 66,66666666666667%
+col-9 = 75%
+col-10 = 83,33333333333333%
+col-11 = 91,66666666666667%
+col-12 = 100%
