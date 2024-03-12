@@ -183,6 +183,13 @@ html {
     right: 0;
 }
 
+/* SERVICES */
+
+.services {
+    background-color: #f4f4f4;
+    margin-top: 9rem;
+}
+
 /*  COMPONENTS
     =============================================== */
 
@@ -247,6 +254,10 @@ a.active-link {
     padding-bottom: .5rem;
     border-bottom: 1px solid #fc4311;
     margin-bottom: 2rem;
+}
+
+.headline__title--1 {
+    color: #fc4311;
 }
 
 .headline__description {
