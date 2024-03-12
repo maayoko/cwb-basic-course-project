@@ -12,6 +12,10 @@
 /*  GENERAL
     ============================================== */
 
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -104,7 +108,8 @@ html {
     color: #fc4311;
 }
 
-.hero__btn_container {
+.hero__btn_container,
+.about__btn_container {
     text-align: center;
     padding-top: 1rem;
 }
@@ -134,6 +139,41 @@ html {
     text-align: center;
     margin: 0;
     margin-bottom: 5rem;
+}
+
+.about__figure {
+    margin: 0;
+}
+
+.about__figure > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about__content-title {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 3rem;
+    line-height: 3.7rem;
+}
+
+.about__content-description {
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+    color: #666666;
+}
+
+.about__content-container {
+    padding-right: 1.5rem;
+}
+
+.about__btn_container {
+    padding-top: 5rem;
+}
+
+.about__btn_container > a {
+    display: inline-block;
 }
 
 /*  COMPONENTS
@@ -182,23 +222,41 @@ a.active-link {
 
 .btn {
     border-radius: 0;
-    border: #da4207 solid 1px;
     padding: 1.5rem 5rem;
     font-size: 1.6rem;
     text-transform: uppercase;
     color: #fff;
     font-weight: 500;
-    background-color: #da4207;
-    border-color: #da4207;
     text-decoration: none;
     transition: .3s;
 }
 
+.btn-primary {
+    border: #da4207 solid 1px;
+    background-color: #da4207;
+    border-color: #da4207;
+}
+
+.btn-secondary {
+    border: #000 solid 1px;
+    background-color: #000;
+    border-color: #000;
+}
+
 .btn:hover {
     border-radius: 2.5rem;
+}
+
+.btn-primary:hover {
     border: #fff solid 1px;
     background-color: #fff;
     color: #da4207;
+}
+
+.btn-secondary:hover {
+    border: #da4207 solid 1px;
+    background-color: #da4207;
+    color: #fff;
 }
 
 
@@ -219,6 +277,13 @@ a.active-link {
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+.row > * {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
 }
 
 .space-between {
@@ -230,13 +295,24 @@ a.active-link {
 }
 
 .col-6 {
-    max-width: 50%;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    width: 50%;
 }
 
-.col-offset-2 {
+.col-9 {
+    width: calc(100/12*9%);
+}
+
+.offset-1 {
     margin-left: calc(100/12*1%);
+}
+
+.offset-3 {
+    margin-left: calc(100/12*3%)
+}
+
+.no-gutters {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /*
