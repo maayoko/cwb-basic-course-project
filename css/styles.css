@@ -188,6 +188,7 @@ html {
 .services {
     background-color: #f4f4f4;
     margin-top: 9rem;
+    padding-bottom: 6rem;
 }
 
 /*  COMPONENTS
@@ -316,6 +317,47 @@ a.active-link {
     color: #fff;
 }
 
+/* CARDS */
+
+.service-card {
+    margin-bottom: 3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.service-card > img {
+    width: 100%;
+    border-radius: 2rem;
+    opacity: 1;
+    transition: .5s;
+}
+
+.service-card > a {
+    position: absolute;
+    text-decoration: none;
+    color: #fc4311;
+    font-size: 1.7rem;
+    padding: 0.5rem 3rem;
+    border: 1px solid transparent;
+    transition: .5s;
+}
+
+.service-card:hover {
+    background-color: #fc4311;
+}
+
+.service-card:hover > img {
+    opacity: 0.4;
+}
+
+.service-card:hover > a {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
 
 /*  GRID
     ================================================ */
@@ -349,6 +391,10 @@ a.active-link {
 
 .col {
     flex: 1 0 0%;
+}
+
+.col-4 {
+    width: calc(100/12*4%);
 }
 
 .col-6 {
