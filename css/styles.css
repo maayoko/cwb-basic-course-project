@@ -191,6 +191,12 @@ html {
     padding-bottom: 6rem;
 }
 
+/* BLOG */
+
+.blog {
+    padding-bottom: 6rem;
+}
+
 /*  COMPONENTS
     =============================================== */
 
@@ -358,6 +364,10 @@ a.active-link {
     border: 1px solid #fff;
 }
 
+.blog-card {
+    margin-bottom: 3rem;
+}
+
 .blog-card > figure {
     margin: 0;
     position: relative;
@@ -375,6 +385,49 @@ a.active-link {
     background-color: #fc4311;
     padding: 1rem 3rem;
     font-size: 1.4rem;
+}
+
+.blog-card__post-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 0;
+}
+
+.blog-card__post-by {
+    color: #fc4311;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.blog-card__reaction-container {
+    display: flex;
+}
+
+.blog-card__reaction-container > p {
+    padding-left: 1.5rem;
+    font-size: 1.6rem;
+    margin: 0;
+    color: #666666;
+}
+
+.blog-card__reaction-container > p > span {
+    color: #fc4311;
+}
+
+.blog-card__title {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 0;
+    padding-bottom: 1.2rem;
+    font-weight: 100;
+}
+
+.blog-card__description {
+    color: #666666;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    margin: 0;
 }
  
 
