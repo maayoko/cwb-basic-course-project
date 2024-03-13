@@ -234,6 +234,27 @@ html {
     cursor: pointer;
 }
 
+/* FOOTER */
+
+.footer {
+    background-color: #fc4311;
+    padding-top: 5.5rem;
+}
+
+.footer .copy-container {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #fff;
+    margin-top: 5.5rem;
+}
+
+.footer .copy-container > p {
+    margin: 0;
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
 /*  COMPONENTS
     =============================================== */
 
@@ -506,6 +527,10 @@ a.active-link {
 
 .col {
     flex: 1 0 0%;
+}
+
+.col-2 {
+    width: calc(100/12*2%);
 }
 
 .col-4 {
