@@ -197,6 +197,43 @@ html {
     padding-bottom: 6rem;
 }
 
+/* CONTACT */
+
+.contact {
+    background-color: #2f2e2e;
+    padding-bottom: 6rem;
+}
+
+.contact__form-container {
+    text-align: center;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+.contact__form > input,
+.contact__form > textarea {
+    border-radius: 0;
+    border: 1px solid #b1b0b0;
+    color: #000;
+    padding: 1.2rem 1.9rem;
+    outline: none;
+    font-size: 1.4rem;
+    margin-bottom: 2.6rem;
+}
+
+.contact__submit-container {
+    text-align: center;
+}
+
+.contact__submit-container > input[type=submit] {
+    cursor: pointer;
+}
+
 /*  COMPONENTS
     =============================================== */
 
@@ -265,6 +302,12 @@ a.active-link {
 
 .headline__title--1 {
     color: #fc4311;
+}
+
+.headline__title--2 {
+    color: #fff;
+    border-bottom-color: #fff;
+    margin-bottom: 6rem;
 }
 
 .headline__description {
@@ -482,7 +525,7 @@ a.active-link {
 }
 
 .offset-3 {
-    margin-left: calc(100/12*3%)
+    margin-left: calc(100/12*3%);
 }
 
 .no-gutters {
