@@ -358,6 +358,25 @@ a.active-link {
     border: 1px solid #fff;
 }
 
+.blog-card > figure {
+    margin: 0;
+    position: relative;
+}
+
+.blog-card > figure > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog-card > figure > span {
+    position: absolute;
+    left: 0;
+    color: #fff;
+    background-color: #fc4311;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+}
+ 
 
 /*  GRID
     ================================================ */
