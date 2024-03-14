@@ -6,7 +6,8 @@
     --hero-image-height: 70rem;
     --hero-title-font-size: 7rem;
     --white-color: #ffffff;
-    --container-width: 114rem;
+    --container-width: 1140px;
+    --global-font-size: 62.5%;
 }
 
 /*  GENERAL
@@ -562,8 +563,9 @@ a.active-link {
     ================================================ */
 
 .container {
-    max-width: 114rem;
     margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .container-fluid {
