@@ -241,6 +241,69 @@ html {
     padding-top: 5.5rem;
 }
 
+.footer__info-title {
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+.footer__info-description {
+    display: flex;
+    align-items: center;
+}
+
+.footer__info-description > img {
+    padding-right: 1rem;
+}
+
+.footer__info-description > em {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.footer__info-icons > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer__info-icons > ul > li {
+    padding-right: 1rem;
+}
+
+.footer__info-icons > ul > li > img {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.footer__info-form  input[type=text] {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    color: #495057;
+    border: 1px solid #ddd;
+    outline: none;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+.footer__info-form  input[type=submit] {
+    border: none;
+    background-color: #000;
+    font-size: 1.8rem;
+    padding: 1rem 2.3rem;
+    cursor: pointer;
+    color: #fc4311;
+    font-weight: 500;
+}
+
+.footer__info-form  input[type=submit]:hover {
+    background-color: #fff;
+}
+
 .footer .copy-container {
     text-align: center;
     padding: 2rem 0;
