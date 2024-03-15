@@ -133,6 +133,7 @@ html {
     font-weight: normal;
     margin-bottom: 3rem;
     line-height: 3.7rem;
+    margin-top: 0;
 }
 
 .about__content-description {
@@ -359,6 +360,7 @@ html {
 
 .navigation > a:last-of-type {
     padding-right: 0;
+    display: none;
 }
 
 /* LINKS */
@@ -557,7 +559,19 @@ a.active-link {
     line-height: 3rem;
     margin: 0;
 }
+
+/*  HELPERS
+    ================================================ */
  
+.space-between {
+    justify-content: space-between;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*  GRID
     ================================================ */
@@ -584,10 +598,6 @@ a.active-link {
 .row > * {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
-}
-
-.space-between {
-    justify-content: space-between;
 }
 
 .col {
@@ -637,3 +647,11 @@ col-9 = 75%
 col-10 = 83,33333333333333%
 col-11 = 91,66666666666667%
 col-12 = 100%
+
+sm >= 576px
+md >= 768px
+lg >= 996px
+xl >= 1200px
+xxl >= 1400px
+
+*/

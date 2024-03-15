@@ -2,36 +2,136 @@
 /*  GENERAL
     ============================================== */
 
+/*  SECTIONS
+    =============================================== */
+
+/* Hero */
+
+@media screen and (min-width: 996px) {
+    .hero {
+        height: 60rem;
+    }
+
+    .hero__container {
+        width: 70rem;
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        height: 70rem;
+    }
+
+    .hero__container {
+        width: 95rem;
+    }
+}
+
+/* About */
+
+@media screen and (min-width: 996px) {
+    .about__content-title {
+        font-size: 2.8rem;
+        line-height: 3.4rem;
+    }
+    
+    .about__content-description {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about__content-title {
+        font-size: 3.4rem;
+        line-height: 3.7rem;
+    }
+    
+    .about__content-description {
+        font-size: 1.9rem;
+        line-height: 2.8rem;
+    }
+}
+
+/* Footer */
+
+@media screen and (min-width: 996px) {
+    .footer__info-icons > ul > li > img {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer__info-icons > ul > li > img {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+}
+
+/*  COMPONENTS
+    =============================================== */
+
+/* NAVIGATION */
+
+@media screen and (min-width: 996px) {
+    .navigation > a:last-of-type {
+        display: initial;
+    }
+}
+
 /*  GRID
     ================================================ */
 
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) { /* small */
     .container {
         max-width: 540px;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) { /* medium */
     .container {
         max-width: 720px;
     }
 }
 
-@media screen and (min-width: 996px) {
+@media screen and (min-width: 996px) { /* large */
     .container {
         max-width: 960px;
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) { /* extra large */
     .container {
         max-width: 1140px;
     }
-}
 
-@media screen and (min-width: 1400px) {
+    .col-xl-11 {
+        width: calc(100/12*11%);
+    }
+
+    .offset-xl-1 {
+        margin-left: calc(100/12*1%);
+    }
+
+    .no-gutters-xl {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+ 
+@media screen and (min-width: 1400px) { /* extra extra large */
     .container {
         max-width: 1320px;
+    }
+
+    .col-xxl-9 {
+        width: calc(100/12*9%);
+    }
+
+    .offset-xxl-3 {
+        margin-left: calc(100/12*3%);
     }
 }
