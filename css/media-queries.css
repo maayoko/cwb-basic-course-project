@@ -7,6 +7,13 @@
 
 /* Header */
 
+@media screen and (min-width: 576px) {
+    .header {
+        padding: 4rem 0 3rem 0;
+        background-color: #fc4311;
+    }
+}
+
 @media screen and (min-width: 996px) {
     .navigation--1 {
         display: flex;
@@ -18,6 +25,16 @@
 }
 
 /* Hero */
+
+@media screen and (min-width: 576px) {
+    .hero__title {
+        padding-bottom: 0;
+    }
+
+    .hero__description {
+        display: block;
+    }
+}
 
 @media screen and (min-width: 768px) {
     .hero {
@@ -102,7 +119,21 @@
 /*  COMPONENTS
     =============================================== */
 
+/* LOGO */
+
+@media screen and (min-width: 576px) {
+    .logo {
+        width: initial;
+        margin-bottom: 0;
+        justify-content: start;
+    }
+}
+
 /* NAVIGATION */
+
+@media screen and (min-width: 576px) {
+
+}
 
 @media screen and (min-width: 996px) {
     .navigation--1 > a:last-of-type {
@@ -118,11 +149,23 @@
     .container {
         max-width: 540px;
     }
+
+    .col-sm-10 {
+        width: calc(100/12*10%);
+    }
+
+    .offset-sm-1 {
+        margin-left: calc(100/12*1%);
+    }
 }
 
 @media screen and (min-width: 768px) { /* medium */
     .container {
         max-width: 720px;
+    }
+
+    .col-md-4 {
+        width: calc(100/12*4%);
     }
 
     .col-md-6 {
@@ -131,6 +174,10 @@
 
     .col-md-12 {
         width: calc(100/12*12%);
+    }
+
+    .offset-md-3 {
+        margin-left: calc(100/12*3%);
     }
 }
 

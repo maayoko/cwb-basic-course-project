@@ -32,14 +32,14 @@ html {
 /* Header */
 
 .header {
-    padding: 4rem 0 3rem 0;
+    padding: 4rem 0 0 0;
     background-color: #fc4311;
 }
 
 /* Hero */
 
 .hero {
-    height: 70rem;
+    height: 45rem;
     background-image: url("/images/banner2.jpg");
     background-size: cover;
     display: flex;
@@ -49,7 +49,7 @@ html {
 }
 
 .hero__container {
-    width: 95rem;
+    width: 50rem;
 }
 
 .hero__title {
@@ -58,11 +58,13 @@ html {
     line-height: 7rem;
     font-weight: bold;
     padding-top: 4rem;
+    padding-bottom: 3rem;
     margin: 0;
     text-align: center;
 }
 
 .hero__description {
+    display: none;
     font-size: 1.7rem;
     padding: 3rem 0px 4rem 0px;
     font-weight: 300;
@@ -333,6 +335,9 @@ html {
 .logo {
     display: flex;
     align-self: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    justify-content: center;
 }
 
 .logo > a {
@@ -377,10 +382,17 @@ html {
     border: 1px solid #ffffff3d;
     border-radius: .2rem;
     text-align: right;
+    padding: 0.5rem 1rem;
 }
 
 .mobile-nav .mobile-nav__menu-container > a {
     font-size: 3rem;
+    color: #fff;
+    line-height: 100%;
+}
+
+.mobile-nav__close-icon {
+    display: none;
 }
 
 .mobile-nav .navigation--2 {
