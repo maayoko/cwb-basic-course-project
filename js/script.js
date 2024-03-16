@@ -7,12 +7,13 @@
         
         mobileNavMenuIcon.onclick = function() {
             if (!menuOpened) {
+                // Leave all styles in css files and toggle here only class names
                 mobileNavMenuIcon.className = "lni lni-close";
-                navigationMenu.style.display = "block";
+                navigationMenu.classList.add("active");
                 menuOpened = true;
             } else {
                 mobileNavMenuIcon.className = "lni lni-menu";
-                navigationMenu.style.display = "none";
+                navigationMenu.classList.remove("active");
                 menuOpened = false;
             }
         }
