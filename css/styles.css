@@ -397,7 +397,24 @@ html {
 
 .mobile-nav .navigation--2 {
     display: none;
+    flex-direction: column;
+    z-index: 1;
+    position: absolute;
+    width: calc(100% - 3rem);
+    background-color: #fff;
 }
+
+.mobile-nav .navigation--2 > a {
+    text-decoration: none;
+    padding: 1.5rem 1rem;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.mobile-nav .navigation--2.active {
+    display: flex;
+}
+
 
 /* LINKS */
 
@@ -607,6 +624,10 @@ a.active-link {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.relative {
+    position: relative;
 }
 
 /*  GRID
