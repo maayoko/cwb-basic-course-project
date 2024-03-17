@@ -613,7 +613,7 @@ a.active-link {
     margin: 0;
 }
 
-/*  HELPERS
+/*  UTILITIES
     ================================================ */
  
 .space-between {
@@ -628,6 +628,11 @@ a.active-link {
 
 .relative {
     position: relative;
+}
+
+.no-gutters {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /*  GRID
@@ -687,11 +692,6 @@ a.active-link {
 
 .offset-3 {
     margin-left: calc(100/12*3%);
-}
-
-.no-gutters {
-    padding-left: 0;
-    padding-right: 0;
 }
 
 /*
