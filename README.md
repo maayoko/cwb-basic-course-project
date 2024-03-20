@@ -75,3 +75,72 @@ Class selector
 - Example: .class
 - multiple class selectors per page allowed
 
+### Elements family tree
+When we are creating html structure we are defining a family tree. We are doing so by nesting (indenting) elements.
+```
+<div> -> parent
+    <h1 class="title" id="title">Title</h1> -> child (sibling to the <p> tag)
+    <p>Description</p>
+</div>
+```
+You can have the same name for id and class.\
+Ways to access h1 element in css\
+`h1 {}`\
+`div h1 {}`\
+`.title {}`\
+`#title {}`\
+`div h1.title {}`\
+`div h1#title {}`\
+More tags you use to reach the child greater is specificity. Greater specificity means advantage to applying styles for the same element. If you have more then one style rules for the same element (e.g. h1), rules with greater specificity will be applied.
+
+### CSS Box model
+Every html element has its own width, height, padding, border and margin.\
+Width and height - where content lives.\
+Content - The content of the box, where text and images appear\
+Padding - Clears an area around the content. The padding is transparent\
+Border - A border that goes around the padding and content\
+Margin - Clears an area outside the border. The margin is transparent\
+
+Adjusting a box model is what you're doing most of the time when designing a page with css (especially when defining a grid).
+
+Grid - 
+
+### PART 1 - HEADER
+Links\
+Described as anchor tags.\
+Links one page to another.\
+You can recognize an anchor tag by a handle when you hover the element with a mouse.\
+Example: `<a href="#">Link 1</a>`
+
+Nav and Header elements\
+One of the HTML5 elements.\
+Used to better describe parts of html.\
+Example: `<nav></nav>`\
+It only describes semantic meaning.
+
+Div element\
+The most used html element when creating html structure.\
+Element groups other elements together.\
+Used for creating grid, placeholder for components.\
+
+Multiple css classes on one HTML element\
+Same css class can be used multiple times on different html elements.
+```
+<div class="media"></div>
+<div class="media"></div>
+```
+Also multiple classes can be applied on one html element
+```
+<div class="media video"></div>
+```
+
+Code organization
+- header tag used to group all inner elements
+    - also it clearly states its about header
+    - header is a section where you typically define navigation links and logo
+- div element with class name container
+    - container: max width, margin auto
+
+
+
+
