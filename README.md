@@ -103,7 +103,13 @@ Margin - Clears an area outside the border. The margin is transparent\
 
 Adjusting a box model is what you're doing most of the time when designing a page with css (especially when defining a grid).
 
-Grid - 
+### CSS Flexbox
+[Guide to CSS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+One container (parent) - which controls the direction of flex items. 
+Main and cross axes. By default main axes is set to row. Other most used one is column where flex items (inner elements) are organized vertically (one bellow another). And that's the basic of flexbox.
+
+Most used flexbox properties are: justify-items, align-content, flex-wrap
 
 ### PART 1 - HEADER
 Links\
@@ -140,6 +146,10 @@ Code organization
     - header is a section where you typically define navigation links and logo
 - div element with class name container
     - container: max width, margin auto
+- div element with class name row
+    - display: flex
+    - different displays: inline, inline-block, block, flex, table
+    - flex-direction: column
 
 
 
