@@ -111,6 +111,9 @@ Main and cross axes. By default main axes is set to row. Other most used one is 
 
 Most used flexbox properties are: justify-items, align-content, flex-wrap
 
+### CSS Grid
+[Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
 ### PART 1 - HEADER
 Links\
 Described as anchor tags.\
